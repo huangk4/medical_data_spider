@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="SpiderData" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=140.143.230.185;Initial Catalog=SpiderData;User ID=sa" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="SpiderDataConnectionString1" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.HNdata" Member="HNdata">
+    <Type Name="HNdata">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="产品中文名称" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="产品英文名称" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="产品注册号" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="产品类别" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="有效期起" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="有效期止" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="生产厂家" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="注册地址" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="规格型号" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="注册类别" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="产品性能结构及组成" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="产品使用范围" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="其他内容" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="备注" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.ZHdata" Member="ZHdata">
+    <Type Name="ZHdata">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="产品名称" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="产品英文名称" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="注册证号" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="产品类别" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="有效期起" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="有效期止" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="发证日期" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="发证机关" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="单位名称" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="注册地址" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="规格型号" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="注册类别" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="管理类别" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="产品性能结构及组成" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="产品使用范围" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="其他内容" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="备注" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.JSdata" Member="JSdata">
+    <Type Name="JSdata">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="产品名称" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="单位名称" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="注册证号" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="管理类别" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="规格型号" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="有效日期" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="发证日期" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="发证机关" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.[user]" Member="user">
+    <Type Name="user">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="username" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="password" Type="System.String" DbType="VarChar(255)" CanBeNull="true" />
+      <Column Name="admin" Type="System.Byte" DbType="TinyInt" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
